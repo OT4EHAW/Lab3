@@ -6,10 +6,10 @@ double eps, s, res;
 
 int findFirstElement(double eps) {
 	i = 0;
-	s = pow(-1, i) * (pow(2, i + 1) / (pow(2, 2 * i) + 1));
+	s = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 	while (abs(s) > eps) {
 		i++;
-		s = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+		s = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 		k = i;
 	}
 	return k;
