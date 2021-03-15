@@ -7,7 +7,7 @@ double sum2(double eps) {
 	s = 0;
 	a = 0;
 	for (int i = 0; ; i++) {
-		a = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+		a = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 		s += a;
 		if (abs(a) < eps) break;
 	}
