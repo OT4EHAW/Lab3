@@ -8,7 +8,7 @@ void print(int n, int k) {
 	setlocale(LC_ALL, "RUS");
 	for (i = 0; i < n; i++) {
 		if (i % k == k - 1) continue;
-		s = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+		s = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 		printf("Иттерация: %d ", i + 1);
 		printf(" Результат: %f\n", s);
 	}
