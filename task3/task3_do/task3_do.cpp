@@ -8,7 +8,7 @@ void print(int n, int k) {
 	setlocale(LC_ALL, "RUS");
 	i = 0;
 	do {
-		s = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+		s = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 		i++;
 		if (i % k == 0)	continue;
 		printf("Иттерация: %d ", i);
