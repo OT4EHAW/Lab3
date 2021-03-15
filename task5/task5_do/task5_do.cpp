@@ -6,10 +6,10 @@ double eps, s, res;
 
 int findFirstNegativeElement(double eps) {
 	i = 0;
-	s = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+	s = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 	do {
 		i++;
-		s = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+		s = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 		if (s > 0) continue;
 		k = i;
 	} while (abs(s) > eps);
