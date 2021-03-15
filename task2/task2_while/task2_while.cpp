@@ -6,7 +6,7 @@ double eps, s, a, res;
 
 double sum2(double eps) {
 	i = 0;
-	a = pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+	a = pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 	s = a;
 	while (abs(a) >= eps) {
 		i++;
