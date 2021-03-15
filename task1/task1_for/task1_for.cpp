@@ -7,7 +7,7 @@ double s, res;
 double sum(int n) {
 
 	for (int i = 0; i < n; i++) {
-		s += pow(-1, i) * (pow(2, i) / (pow(i, i + 1) + 1));
+		s += pow(-1, i) * (1-(2 * i) / (2 * i + 1));
 	}
 	return s;
 }
